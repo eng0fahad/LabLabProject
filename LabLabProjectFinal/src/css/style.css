@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --primryColor: rgba(0, 0, 0, 0.524);
+  --fontColor: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Courier;
+}
+a {
+  color: var(--fontColor);
+  text-decoration: none !important;
+}
+body {
+  font-size: 20px;
+  background-color: gray;
+  background: rgb(180, 180, 180) url("/src/img/Untitled-1.png") no-repeat fixed center bottom  ;
+    background-size: cover;
+
+
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 100%;
+  padding: 10px 90px;
+  font-size: 1.7em;
+  font-weight: 700;
+  color: var(--fontColor);
+  background-color: var(--primryColor);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+}
+
+header a:hover {
+  text-shadow: 0px 0px 3px var(--fontColor);
+  color: var(--fontColor);
+}
+
+main {
+  min-height: 80vh;
+}
+.fristSection {
+  display: flex;
+  justify-content: space-around;
+  max-width: 400px;
+  margin: 70px auto;
+}
+.startBtn {
+  padding: 30px 40px;
+  background-color: var(--primryColor);
+  border-radius: 10px;
+  text-align: center;
+  color: var(--fontColor);
+  font-size: 2em;
+  transition: all 0.4s;
+}
+.startBtn:hover {
+  transform: scale(1.03);
+  text-shadow: 0px 0px 3px var(--fontColor);
+}
+
+.textArea {
+  width: 80%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.524);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  font-weight: 500;
+  color: var(--fontColor);
+  font-size: 1em;
+}
+
+.qr-code {
+  margin-bottom: 30px;
+}
+.btndiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.title {
+  width: 100%;
+  margin:100px auto 0px auto;
+  color: var(--fontColor);
+  font-weight: 500;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.cardSection {
+  max-width: 1000px;
+  width: 80%;
+  padding: 20px;
+  margin: 0px auto 100px auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+.sambCard {
+  padding: 4px;
+  margin: 5px 5px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.524);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  font-weight: 500;
+  color: var(--fontColor);
+  text-align: center;
+  font-size: 1em;
+  transition: all 0.4s;
+}
+.sambCard img {
+  width: 170px;
+  height: auto;
+  border-radius: 6px;
+  transition: all 0.4s;
+}
+.sambCard:hover {
+  transform: scale(1.03);
+}
+
+.teamCard {
+  margin: 10px;
+  padding: 15px 40px 20px 40px;
+  background-color: rgba(0, 0, 0, 0.524);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  font-weight: 500;
+  color: var(--fontColor);
+  text-align: center;
+  font-size: 1em;
+  transition: all 0.4s;
+}
+.teamCard:hover {
+  transform: scale(1.03);
+}
+.teamCard:hover img {
+  box-shadow: 0px 0px 6px white;
+}
+.teamCard img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+footer {
+  min-height: 120px;
+  width: 100%;
+  background-color: var(--primryColor);
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  header {
+    padding: 25px 40px;
+  }
+  .textArea {
+    width: 90%;
+    padding: 20px;
+  }
+  .cardSection {
+    width: 90%;
+    padding: 20px;
+  }
+}
